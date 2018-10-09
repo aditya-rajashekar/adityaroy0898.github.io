@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+
+.pic1{
+	opacity: 0;
+	animation-name:slidein;
+	animation-duration: 9s;
+	animation-timing-function: linear;
+}
+.pic2{
+	opacity: 0;
+	animation-name: slideinn;
+	animation-duration: 9s;
+	animation-timing-function: linear;
+}
+.pic4{
+	opacity: 0;
+	animation-name: slide;
+	animation-duration: 9s;
+	animation-timing-function: linear;
+	animation-delay: 12s;
+
+
+}
+.pic5{
+	opacity: 0;
+	animation-name:slidee;
+	animation-duration: 9s;
+	animation-timing-function: linear;
+	animation-delay: 12s;
+
+
+}
+
+@keyframes slidein{
+	0%{
+		opacity:1;
+       transform:translate(-500px,-550px);
+	}
+
+	25%{
+		opacity: 1;
+       transform:translate(200px,00px);
+	}
+
+
+
+	50%{
+		opacity: 1;
+		transform:translate(600px,-550px);
+		
+	}
+
+	100%{
+		opacity: 1;
+        transform:translate(1100px,00px);
+		
+	}
+}
+@keyframes slideinn{
+	0%{
+		opacity:1;
+       transform:translate(1420px,00px);
+	}
+
+	25%{
+		opacity: 1;
+       transform:translate(400px,-550px);
+	}
+
+
+
+	50%{
+		opacity: 1;
+		transform:translate(0px,0px);
+		
+	}
+	
+
+	100%{
+		opacity: 1;
+        transform:translate(-1000px,-550px);
+		
+	}
+}
+@keyframes slide{
+	0%{
+		opacity:1;
+       transform:translate(-400px,-850px);
+	}
+
+	25%{
+		opacity: 1;
+       transform:translate(-100px,-850px);
+	}
+
+
+
+	50%{
+		opacity: 1;
+		transform:translate(300px,-850px);
+		
+	}
+	
+	
+}
+@keyframes slidee{
+	0%{
+		opacity:1;
+       transform:translate(1120px,-800px);
+	}
+
+	25%{
+		opacity: 1;
+       transform:translate(800px,-800px);
+	}
+
+
+
+	50%{
+		opacity: 1;
+		transform:translate(400px,-800px);
+		
+	}
+	
+}
+
+
+
+
+
+
+
+/*.take-input {
+  margin: 50px 0 0;
+}
+
+.take-input input {
+  width: 400px;
+  height: 35px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #ececec;
+  margin: 0 15px 0 0;
+  font-size: 15px;
+}*/
+
+
+
+
+/* Animation Five */
+h1{
+	font:Lato;
+	color:#f1f2b5;
+	animation-name: dropVanish;
+	animation-duration: 1s;
+	animation-delay: 14s;
+	animation-fill-mode: forwards;
+}
+
+h2{
+	font:Lato;
+	color:#0072ff;
+	animation-name: dropVanish;
+	animation-duration: 1s;
+	animation-delay: 18s;
+	animation-fill-mode: forwards;
+}
+p{
+	font:Lato;
+	font-size: 20px;
+	color:#eef2f3;
+	animation-name: appear;
+	animation-duration: 3s;
+	animation-delay: 19s;
+	animation-fill-mode: forwards;
+
+}
+@keyframes appear{
+	0%{
+		opacity: 0;
+	}
+	25%{
+		opacity: 0.25;
+	}
+	50%{
+		opacity: 0.5;
+	}
+	75%{
+		opacity: 0.75;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes dropVanish {
+	30% {
+		transform: translate(0, -50px) rotate(180deg) scale(1);
+	}
+
+	50% {
+		transform: translate(0, 20px) scale(.8) rotate(0deg);
+		opacity: 1;
+	}
+
+	80% {
+		transform: translate(-100px, -100px) scale(1.5) rotate(-180deg);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(0) scale(1) rotate(0deg);
+		opacity: 1;
+	}
+}
+video{
+	animation-name: appear;
+	animation-fill-mode: forwards;
+	animation-delay: 19s;
+}
+
+
+
+
+
+/* Animation Six */
+
+

@@ -1,0 +1,201 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
+@import url(https://fonts.googleapis.com/css?family=Squada+One);
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: url("C:/Users/DELL/Desktop/project/aadi's bday/group.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#mount {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   
+  
+  overflow: hidden;
+}
+h1,
+input {
+  text-transform: uppercase;
+  font: 200 8em/1 Anton;
+  text-align: center;
+}
+h1 {
+  cursor: pointer;
+}
+.char {
+  opacity: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #FF8C00;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 100px;
+  font-weight: 800;
+  letter-spacing: -3px;
+  line-height: 1;
+  text-shadow: #EDEDED 3px 2px 0;
+  position: relative;
+  display: block;
+  float: left;
+  animation:  forwards cw;
+  transform-origin: 50% 50%;
+  z-index: 1;
+  animation-fill-mode: forwards;
+}
+
+.char:nth-child(2n) {
+  animation-name: ccw;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cw {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    
+  }
+
+  4% {
+     opacity: 1;
+    transform: scale(3) rotate(10deg);
+    text-shadow: 0 0 10px #000;
+    color: white;
+    z-index: 2;
+    position: relative;
+   
+  }
+  
+  8% {
+    opacity: 1;
+    transform: scale(1);
+    text-shadow: 0 0 0 transparent;
+    color:white;
+    position: relative;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes ccw {
+  0% {
+     opacity: 1;
+    transform: scale(1);
+    position: relative;
+  }
+
+  4% {
+     opacity: 1;
+    transform: scale(3) rotate(-10deg);
+    text-shadow: 0 0 10px #000;
+    color: red;
+    z-index: 2;
+    position: relative;
+  }
+  
+  8% {
+     opacity: 1;
+    transform: scale(1);
+    text-shadow: 0 0 0 transparent;
+    color: red;
+    position: relative;
+  }
+  100%{
+    opacity:1;
+  }
+}
+
+p {
+  position: absolute;
+  top: 5vh;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1em;
+  font-family: sans-serif;
+  animation: infinite 10.5s pulse;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+.wrapper {
+    text-align: center;
+}
+
+
+
+
+.button-2 {
+  opacity: 0;
+  border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 10px auto;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    background: #cb4e4e;
+    color: #fff;
+    -webkit-box-shadow: 0 4px #ab3c3c;
+    -moz-box-shadow: 0 4px #ab3c3c;
+    box-shadow: 0 4px #ab3c3c;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+    border-radius: 40px;
+     position: absolute;
+    top: 73%;
+    left:40%;
+    animation-name: appear;
+    animation-duration: 2.5s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes appear{
+  0%{
+    opacity:1;
+    transform:  scale(1);
+  }
+  
+  50%{
+    opacity:1;
+   transform:  scale(1.8);
+  }
+  
+  100%{
+    opacity:1;
+   transform:  scale(1);
+  }
+  
+
+  
+}
+

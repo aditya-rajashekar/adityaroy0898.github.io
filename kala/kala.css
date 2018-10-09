@@ -1,0 +1,168 @@
+body{
+	background: #e1eec3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f05053, #e1eec3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f05053, #e1eec3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.pic1{
+	opacity: 0;
+	animation-name: comein;
+	animation-duration: 6s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	animation-delay: 2s;
+}
+.pic2{
+	opacity: 0;
+	animation-name: comeout;
+	animation-duration: 6s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	animation-delay: 2s;
+}
+.pic3{
+	opacity: 0;
+	animation-name: comeoutright;
+	animation-duration: 6s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	animation-delay: 2s;
+}
+.pic4{
+	opacity: 0;
+	animation-name: comeoutleft;
+	animation-duration: 6s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	animation-delay: 2s;
+}
+@keyframes comein{
+	      0%{
+	      	opacity:1;
+       transform:translate(350px,-100px);
+	      }
+
+	      25%{
+	      	opacity:1;
+       transform:translate(250px,-200px);
+	      }
+	       50%{
+	      	opacity:1;
+       transform:translate(150px,-300px);
+	      }
+	       75%{
+	      	opacity:1;
+       transform:translate(50px, -400px);
+	      }
+	      100%{
+	      	opacity:1;
+       transform:translate(-10px,-580px);
+	      }
+
+
+}
+@keyframes comeout{
+	      0%{
+	      	opacity:1;
+       transform:translate(-250px,-55px);
+	      }
+
+	      25%{
+	      	opacity:1;
+       transform:translate(-150px,-650px);
+	      }
+	       50%{
+	      	opacity:1;
+       transform:translate(00px,-750px);
+	      }
+	       75%{
+	      	opacity:1;
+       transform:translate(250px, -820px);
+	      }
+	      100%{
+	      	opacity:1;
+       transform:translate(490px,-950px);
+	      }
+
+
+}
+@keyframes comeoutright{
+	      0%{
+	      	opacity:1;
+       transform:translate(-150px,-800px);
+	      }
+
+	      25%{
+	      	opacity:1;
+       transform:translate(00px,-750px);
+	      }
+	       50%{
+	      	opacity:1;
+       transform:translate(150px,-600px);
+	      }
+	       75%{
+	      	opacity:1;
+       transform:translate(220px,-550px);
+	      }
+	      100%{
+	      	opacity:1;
+       transform:translate(275px,-570px);
+	      }
+
+
+}
+@keyframes comeoutleft{
+	      0%{
+	      	opacity:1;
+       transform:translate(-600px,-810px);
+	      }
+
+	      25%{
+	      	opacity:1;
+       transform:translate(-500px,-780px);
+	      }
+	       50%{
+	      	opacity:1;
+       transform:translate(-400px,-650px);
+	      }
+	       75%{
+	      	opacity:1;
+       transform:translate(-250px,-575px);
+	      }
+	      100%{
+	      	opacity:1;
+       transform:translate(-195px,-570px);
+	      }
+
+
+}
+h1{
+	animation-name: appear;
+	animation-delay: 6s;
+	animation-fill-mode: forwards;
+
+}
+p{
+	animation-name: appear;
+	animation-delay: 8s;
+	animation-fill-mode: forwards;
+
+}
+@keyframes appear{
+	0%{
+		opacity:0;
+	}
+	25%{
+		opacity:0.25;
+	}
+	50%{
+		opacity:0.5;
+	}
+	75%{
+		opacity:0.75;
+	}
+	100%{
+		opacity:1;
+	}
+}

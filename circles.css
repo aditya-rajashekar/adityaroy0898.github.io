@@ -1,0 +1,292 @@
+body{
+	width: 100%;
+	height: 100%;
+	background-image: url(http://www.gotya-app.com/img/bg.jpg);
+	background-size: cover;
+}
+.wrap{
+	text-align: left;
+}
+
+
+
+body, html {
+ height: 100%;
+ margin: 0;
+}
+.wrap {
+    position: absolute;
+    top: 50%;
+    left: 34%;
+    margin-top: -86px;
+    margin-left: -89px;
+    text-align: center;
+}
+.wrapp {
+    position: absolute;
+    top: 20%;
+    left: 14%;
+    margin-top: -86px;
+    margin-left: -89px;
+    text-align: center;
+}
+
+
+#howler-pause {
+    -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    display: block;
+    margin: 5px auto;
+    max-width: 180px;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 3px 30px;
+}
+
+.howler-pause {
+	animation: appear 2.5s ease-out;
+	animation-fill-mode: forwards;
+	
+  position: absolute;
+  text-align: center;
+  
+  left: 50%;
+  bottom: 15%;
+  right: 0;
+  height: 40px;
+
+	text-align: left;
+    color: rgba(30, 22, 54, 0.6);
+    box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+}
+
+.howler-pause:hover{
+    color: rgba(255, 255, 255, 0.85);
+    box-shadow: rgba(30, 22, 54, 0.7) 0 0px 0px 40px inset;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #333;
+}
+.centered {
+  width: 550px;
+  height: 110px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.group {
+  width: 100%;
+  height: 110px;
+  overflow: hidden;
+  position: relative;
+}
+label {
+  position: absolute;
+  top: 36.66667px;
+  color: rgba(255, 255, 255, 0.5);
+  font: 400 36.66667px Roboto;
+  cursor: text;
+  transition: 0.25s ease;
+}
+input {
+  display: block;
+  width: 100%;
+  padding-top: 36.66667px;
+  border: none;
+  border-radius: 0;
+  color: white;
+  background-image: url(http://www.gotya-app.com/img/bg.jpg);
+  font-size: 36.66667px;
+  transition: 0.3s ease;
+}
+input:valid ~ label {
+  top: 0;
+  font: 700 22px Roboto;
+  color: rgba(255, 255, 255, 0.5);
+}
+input:focus {
+  outline: none;
+}
+input:focus ~ label {
+  top: 0;
+  font: 700 22px Roboto;
+  color: #2196f3;
+}
+input:focus ~ .bar:before {
+  transform: translateX(0);
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #333 inset;
+  -webkit-text-fill-color: white !important;
+}
+.bar {
+  background: rgba(255, 255, 255, 0.5);
+  content: "";
+  width: 550px;
+  height: 3.66667px;
+  transition: 0.3s ease;
+  position: relative;
+}
+.bar:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 150%;
+  background: #2196f3;
+  transform: translateX(-100%);
+}
+::selection {
+  background: rgba(33, 150, 243, 0.3);
+}
+@keyframes star {
+  0% {
+    opacity: 0;
+    transform: scale(2) translateY(-0.75em);
+  
+  }
+  20% {
+    opacity: 1;
+      
+}
+
+  89% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity:1;
+    transform: translateZ(-10000em);
+  }
+}
+@keyframes appear{
+  0% {
+    opacity: 0;
+   
+  
+  }
+  25% {
+    opacity: 0.25;
+      
+}
+  50% {
+    opacity: 0.5;
+      
+}
+
+  75% {
+    opacity: 0.75;
+    }
+  100% {
+    opacity: 1;
+    transform: translateZ(-10000em);
+  }
+}
+
+
+p{
+		opacity: 0;
+   text-align: left;
+   position: all;		
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+	font-size: 34px;
+	padding: 3px 30px;
+
+}
+.vunnam{
+	animation: appear 2.5s ease-out;
+	animation-fill-mode: forwards;
+	opacity: 1;
+    text-align: center;
+    color: white;
+text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+              0px -5px 35px rgba(255,255,255,0.3);
+
+}
+.m1{
+    animation: star 2.5s ease-out;
+	animation-fill-mode: forwards;
+	position: absolute;
+    top: 10%;
+    left: 4%;
+    margin-top: -86px;
+    margin-left: -89px;
+    text-align: center;
+}
+.m2{
+	animation: star 2.5s ease-out;
+	animation-fill-mode: forwards;
+	position: absolute;
+    top: 10%;
+    right: 0%;
+    margin-top: -86px;
+    margin-left: -89px;
+    text-align: center;
+}
+
+.mn2{
+	animation: star 2.5s ease-out;
+
+	
+	
+	position: absolute;
+    top: 10%;
+    right: 2.8%;
+    margin-top: -86px;
+    margin-left: -89px;
+    text-align: center;
+}
+
+.manikanta{
+	animation: appear 2.5s ease-out;
+	animation-fill-mode: forwards;
+	opacity: 1;
+    text-align: center;
+    color: white;
+text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+              0px -5px 35px rgba(255,255,255,0.3);
+
+}
+
+.mani{
+	left:10%;
+	color:#283D4B;
+}
+input:invalid + span:after {
+    content: '✖';
+    color: #f00;
+    padding-left: 5px;
+}
+
+input:valid + span:after {
+    content: '✓';
+    color: #26b72b;
+    padding-left: 5px;
+}
+.hello{
+  opacity: 0;
+}
+.hi{
+  opacity: 1;
+}
+.hey{
+  display: flex;
+}
+
+
+
+
+
+
+

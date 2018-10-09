@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Happy Birthday Aadi!</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="paper-full.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.14/howler.core.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="circles.css">
+
+
+
+
+	
+
+	
+	<script type="text/javascript" canvas="myCanvas">
+
+
+ $(document).keypress(function(event){
+ 	$('.hi').hide();
+ 	$
+ 	var value = $("#title").val();
+ 	var howler_example = new Howl({
+		src: ['sounds/pilla.mp3'],
+	});
+	var howler_example1 = new Howl({
+		src: ['sounds/one.mp3'],
+	});
+                var keycode = (event.keyCode ? event.keyCode : event.which);
+                if(keycode == '13' && (value==="mona"||value==="Mona")){
+                	
+                  window.location.assign("C:/Users/DELL/Desktop/project/aadi's bday/potti.html")
+                	
+                }
+                                 if(keycode == '13' && (value==="kalaaw"||value==="kalaaw")){
+                	
+                  window.location.assign("C:/Users/DELL/Desktop/project/aadi's bday/kala/kala.html")
+                	
+                }
+                if(keycode == '13' && (value==="Shubadha Kapre"||value==="shubadha kapre")){
+                	
+                  window.location.assign("C:/Users/DELL/Desktop/project/aadi's bday/kapre/index.html")
+                	
+                }
+                 if(keycode == '13' && (value==="bittu narsimha"||value==="Bittu Narsimha")){
+                	
+                  window.location.assign("C:/Users/DELL/Desktop/project/aadi's bday/raja/index.html")
+                	}
+                	 if(keycode == '13' && (value==="teja narsimha"||value==="Teja Narsimha")){
+                	 	
+                	 window.location.assign("C:/Users/DELL/Desktop/project/aadi's bday/teja/index.html")
+                 
+                	}
+
+                 if(keycode=="13" && (value!=="shubhada kapre")){
+                   $("img").toggleClass("hi");
+                 }
+                 if(keycode=="13" && (value!=="bittu narsimha")){
+                   $("img").toggleClass("hi");
+                 }
+                 if(keycode=="13" && (value!=="teja narsimha")){
+                   $("img").toggleClass("hi");
+                 }
+                 if(keycode=="13" && (value!=="mona")){
+                   $("img").toggleClass("hi");
+                 }
+                 if(keycode=="13" && (value!=="kalaaw")){
+                   $("img").toggleClass("hi");
+                   $("img").toggleClass("hey");
+                 }
+                
+
+                 
+
+                  $(".howler-pause").on("click", function(){
+		howler_example.pause();
+		howler_example1.pause();
+
+                	
+              
+              
+	});
+            });
+                 
+
+
+
+
+
+
+	</script>
+
+
+	
+
+	
+
+</head>
+<body style="background-image: url(http:/www.gotya-app.com/img/bg.jpg)">
+	
+
+
+<img class="hello" width="200px;" src="galiz.jpeg">
+	
+	
+
+<div class="centered">
+  <div class="group">
+    <input type="text" id="title" pattern="[Mm]onika|[Tt]eja|[Kk]ala|[Mm]anikanta|[Aa]ditya" required>
+    <label for="name"></label>
+    
+    <div class="bar"></div>
+    <button id="myBtn" style="opacity: 0;" onclick="hi()">Button</button>
+  </div>
+
+</body>
+</html>
